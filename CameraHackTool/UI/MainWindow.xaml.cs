@@ -45,7 +45,7 @@ namespace CameraHackTool
             ListBox_RunningProcesses.DataContext = AllSelectedProcesses;
 
             // set title to show version information
-            this.Title = "ChipCameraHack v" + Assembly.GetExecutingAssembly().GetName().Version.ToString(2);
+            this.Title = "XIVCameraHack v" + Assembly.GetExecutingAssembly().GetName().Version.ToString(2);
         }
 
         private void MainWindow_Loaded(object sender, RoutedEventArgs e)

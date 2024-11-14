@@ -14,9 +14,9 @@ namespace CameraHackTool
         private static readonly Lazy<Metadata> __arbitur__ = new Lazy<Metadata>(() => new Metadata());
 
 #if DEBUG
-        public string MetadataURL = Path.Combine(Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName, "Resources/AddressAndOffsetMetadata.xml");
+        public string MetadataURL = Path.Combine(Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.Parent.FullName, "Resources/AddressAndOffsetMetadata.xml");
 #else
-        public string MetadataURL = "https://raw.githubusercontent.com/BardMusicPlayer/ChipCameraHack/main/CameraHackTool/Resources/AddressAndOffsetMetadata.xml";
+        public string MetadataURL = "https://raw.githubusercontent.com/Meowchestra/XIVCameraHack/main/CameraHackTool/Resources/AddressAndOffsetMetadata.xml";
 #endif
 
         public enum MetadataResult

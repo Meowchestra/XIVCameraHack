@@ -24,23 +24,16 @@ namespace CameraHackTool.UI
             InitializeComponent();
 
             TextBlock_Info.Inlines.Clear();
-            TextBlock_Info.Inlines.Add($"ChipCameraHack v" + Assembly.GetExecutingAssembly().GetName().Version.ToString(2) + ".\n");
+            TextBlock_Info.Inlines.Add($"XIVCameraHack v" + Assembly.GetExecutingAssembly().GetName().Version.ToString(2) + ".\n");
             TextBlock_Info.Inlines.Add($"Developed by Chipotle Ismylife.\n");
-            TextBlock_Info.Inlines.Add($"Ko-fi (buy me a drink!): ");
-            Hyperlink kflink = new Hyperlink()
-            {
-                NavigateUri = new Uri("https://ko-fi.com/trotlinebeercan")
-            };
-            kflink.Inlines.Add("https://ko-fi.com/trotlinebeercan");
-            kflink.RequestNavigate += Hyperlink_RequestNavigate;
-            TextBlock_Info.Inlines.Add(kflink);
+            TextBlock_Info.Inlines.Add($"Modernized by Meowchestra");
             TextBlock_Info.Inlines.Add("\n");
             TextBlock_Info.Inlines.Add($"Github: ");
             Hyperlink ghlink = new Hyperlink()
             {
-                NavigateUri = new Uri("https://github.com/BardMusicPlayer/ChipCameraHack")
+                NavigateUri = new Uri("https://github.com/Meowchestra/XIVCameraHack")
             };
-            ghlink.Inlines.Add("https://github.com/BardMusicPlayer/ChipCameraHack");
+            ghlink.Inlines.Add("https://github.com/Meowchestra/XIVCameraHack");
             ghlink.RequestNavigate += Hyperlink_RequestNavigate;
             TextBlock_Info.Inlines.Add(ghlink);
             TextBlock_Info.Inlines.Add("\n");

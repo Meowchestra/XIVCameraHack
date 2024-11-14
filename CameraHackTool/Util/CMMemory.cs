@@ -927,7 +927,7 @@ namespace CameraHackTool
         public int readPByte(UIntPtr address, string code, string file = "")
         {
             byte[] memory = new byte[4];
-            if (ReadProcessMemory(pHandle, address + LoadIntCode(code, file), memory, (UIntPtr)1, IntPtr.Zero))
+            if (ReadProcessMemory(pHandle, address + (UIntPtr)LoadIntCode(code, file), memory, (UIntPtr)1, IntPtr.Zero))
                 return BitConverter.ToInt32(memory, 0);
             else
                 return 0;
@@ -936,7 +936,7 @@ namespace CameraHackTool
         public float readPFloat(UIntPtr address, string code, string file = "")
         {
             byte[] memory = new byte[4];
-            if (ReadProcessMemory(pHandle, address + LoadIntCode(code, file), memory, (UIntPtr)4, IntPtr.Zero))
+            if (ReadProcessMemory(pHandle, address + (UIntPtr)LoadIntCode(code, file), memory, (UIntPtr)4, IntPtr.Zero))
             {
                 float spawn = BitConverter.ToSingle(memory, 0);
                 return (float)Math.Round(spawn, 2);
@@ -948,7 +948,7 @@ namespace CameraHackTool
         public int readPInt(UIntPtr address, string code, string file = "")
         {
             byte[] memory = new byte[4];
-            if (ReadProcessMemory(pHandle, address + LoadIntCode(code, file), memory, (UIntPtr)4, IntPtr.Zero))
+            if (ReadProcessMemory(pHandle, address + (UIntPtr)LoadIntCode(code, file), memory, (UIntPtr)4, IntPtr.Zero))
                 return BitConverter.ToInt32(memory, 0);
             else
                 return 0;
@@ -957,7 +957,7 @@ namespace CameraHackTool
         public string readPString(UIntPtr address, string code, string file = "")
         {
             byte[] memoryNormal = new byte[32];
-            if (ReadProcessMemory(pHandle, address + LoadIntCode(code, file), memoryNormal, (UIntPtr)32, IntPtr.Zero))
+            if (ReadProcessMemory(pHandle, address + (UIntPtr)LoadIntCode(code, file), memoryNormal, (UIntPtr)32, IntPtr.Zero))
                 return CutString(System.Text.Encoding.ASCII.GetString(memoryNormal));
             else
                 return "";

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CameraHackTool.UI"
         mc:Ignorable="d"
-        Title="About ChipCameraHack" Height="350" Width="700" Background="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}">
+        Title="About XIVCameraHack" Height="350" Width="700" Background="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="150*"/>

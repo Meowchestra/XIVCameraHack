@@ -1,9 +1,5 @@
 ﻿using System.Windows;
 
-using Microsoft.AppCenter;
-using Microsoft.AppCenter.Analytics;
-using Microsoft.AppCenter.Crashes;
-
 namespace CameraHackTool
 {
     /// <summary>
@@ -11,5 +7,12 @@ namespace CameraHackTool
     /// </summary>
     public partial class App : Application
     {
+        [STAThread]
+        public static void Main()
+        {
+            var app = new App();
+            app.InitializeComponent();
+            app.Run();
+        }
     }
 }
