@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<Root>
+    <AppVersion>1.6.0.0</AppVersion>
+    <DownloadLink>https://github.com/BardMusicPlayer/ChipCameraHack/releases</DownloadLink>
+    <AppMetadata>
+        <LV>
+            <Address>2731720</Address>
+            <Offsets>
+                <CameraZoom>124</CameraZoom>
+                <CameraFOV>130</CameraFOV>
+                <CameraAngleX>140</CameraAngleX>
+                <CameraAngleY>144</CameraAngleY>
+                <CameraHeight>134</CameraHeight>
+                <PlayerName>30</PlayerName>
+            </Offsets>
+        </LV>
+        <KR>
+            <Address>1D87610</Address>
+            <Offsets>
+                <CameraZoom>114</CameraZoom>
+                <CameraFOV>120</CameraFOV>
+                <CameraAngleX>130</CameraAngleX>
+                <CameraAngleY>134</CameraAngleY>
+                <CameraHeight>124</CameraHeight>
+                <PlayerName>30</PlayerName>
+            </Offsets>
+        </KR>
+        <CN>
+            <Address>1D87610</Address>
+            <Offsets>
+                <CameraZoom>114</CameraZoom>
+                <CameraFOV>120</CameraFOV>
+                <CameraAngleX>130</CameraAngleX>
+                <CameraAngleY>134</CameraAngleY>
+                <CameraHeight>124</CameraHeight>
+                <PlayerName>30</PlayerName>
+            </Offsets>
+        </CN>
+    </AppMetadata>
+</Root>
