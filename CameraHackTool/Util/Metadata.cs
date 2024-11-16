@@ -42,7 +42,7 @@ public class Metadata
     {
         try
         {
-            var xmlf = XDocument.Load(MetadataUrl);
+            var xmlf = XDocument.Load(MetadataURL);
             var root = xmlf.Element("Root");
 
             foreach (var element in root?.Elements()!)

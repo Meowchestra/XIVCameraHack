@@ -37,7 +37,7 @@ public partial class Information
         TextBlockInfo.Inlines.Add($"\tCameraAngleY:\tffxiv_dx11.exe+0x{Metadata.Instance.CameraAngleY.Address:X} + 0x{Metadata.Instance.CameraAngleY.Offset:X}\n");
         TextBlockInfo.Inlines.Add($"\tNameOffset:\t{Metadata.Instance.PlayerNameOffset}\n");
         TextBlockInfo.Inlines.Add($"\tHeightOffset:\t{Metadata.Instance.CameraHeightOffset}\n");
-        TextBlockInfo.Inlines.Add($"\tMetadataURL:\t{Metadata.Instance.MetadataUrl}\n");
+        TextBlockInfo.Inlines.Add($"\tMetadataURL:\t{Metadata.Instance.MetadataURL}\n");
     }
 
     private static void Hyperlink_RequestNavigate(object sender, RequestNavigateEventArgs e)
